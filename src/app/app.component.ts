@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'IO';
+  msgfromParent : string = "work hard and party hard"
+  // msgFromChild : string = "";
+  msgFromChild !: string;
+  getmsg(msg : string){
+    console.log(msg);
+    this.msgFromChild = msg;
+  }
 }
